@@ -1,0 +1,399 @@
+<!-- NitroCow Website 2017 -->
+
+<!-- Designed by James Wong -->
+<!-- ====================== -->
+<!-- ====== GA FEWD31 ===== -->
+<!-- ====================== -->
+
+<!doctype html>
+<html>
+	<head>
+		<title>NitroCow</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Acme|Permanent+Marker" rel="stylesheet">
+		<link href="lightbox2-master/dist/css/lightbox.min.css" rel="stylesheet">
+		<link rel="icon" href="favicon-16x16.png" type="image/png">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+	</head>
+
+	<body>	
+		<!-- LOADING PAGE-->
+		<div id="loader-wrapper">
+    		<div id="loader"></div>
+    		<div class="loader-section section-left"></div>
+			<div class="loader-section section-right"></div>
+		</div>
+
+		<!-- NAV MOBILE OVERLAY -->
+		<div class="nav_button">
+			<a class="nav_button_open"></a>
+		</div>
+		<div class="nav_overlay">
+	    	<ul class="nav_overlay_container">
+		    	<li id="nav_overlay_about" class="page_scroll"><a href="#about">About Us</a></li>
+		    	<li id="nav_overlay_gallery" class="page_scroll"><a href="#gallery">Gallery</a></li>
+		        <li id="nav_overlay_contact" class="page_scroll"><a href="#contact">Contact</a></li>
+	    	</ul>
+	    </div>
+
+		<!-- MAIN -->
+		<section id="main">
+			<div class="main_image parallax">
+				<div class="main_header_wrapper"></div>
+							
+				<!-- NAV -->
+				<nav class="navbar navbar_main_styles" id="navbar_main">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+			      		<a class="navbar-left navbar_logo" href="#main"><img src="./images/nitroCow_logo.jpg"></a>
+			      		<div class="social_media_list navbar-right">
+					       <a href="https://www.facebook.com/nitrocowgelato/" target="_blank" class="fa fa-facebook-square fa-3x"></a>
+					       <a href="https://twitter.com/search?q=nitrocowgelato&src=typd&lang=en" target="_blank" class="fa fa-twitter-square fa-3x"></a>
+					       <a href="https://www.instagram.com/nitrocowgelato/" target="_blank" class="fa fa-instagram fa-3x"></a>
+					    </div>
+			    	</div>
+
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="nav_button_container">
+				    	<ul class="nav navbar-nav navbar-right">
+					    	<li id="nav_about" class="page_scroll"><a href="#about">About Us</a></li>
+					    	<li id="nav_gallery" class="page_scroll"><a href="#gallery">Gallery</a></li>
+					        <li id="nav_contact" class="page_scroll"><a href="#contact">Contact</a></li>
+				    	</ul>
+				    </div><!-- /.navbar-collapse -->
+				</nav>
+				<div class="center_btn_wrapper">
+					<button class="btn_black_white btn-raise" id="check_us_out_btn">See Our Promo Video!</button>
+				</div>
+			</div>
+			<div class="overlay">
+			    <div class="video_wrapper">
+	    	      	<a href="javascript:void(0)" id="closebtn">&times;</a>
+	    	      	<div id="video_player"></div>
+			    </div>
+			</div>
+			<div class="triangles">
+				<div class="triangle_left"></div>
+				<div class="triangle_right"></div>
+			</div>
+		</section> <!-- close video section -->
+
+		<!-- HIDDEN VIDEO EMBED FOR RESPONSIVE -->
+		<section id="hidden_video">
+			<div class="hidden_video_header_wrapper text-center">
+				<h1>Watch Our Promo Video!</h1>
+				<div class="header_underline"></div>
+			</div>
+			<div class="hidden_video_wrapper">
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/BcCUGAcFijg?frameborder=0&rel=0&fs=1&controls=1&showinfo=0&modestbranding=1" allowfullscreen></iframe>
+			</div>
+		</section>
+
+
+		<!-- ABOUT US -->
+		<section id="about">
+			<div class="container" id="about_container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 about_text_container">
+						<div class="about_us_header">
+		    				<h1>About Us</h1>
+		    				<div class="header_underline"></div>
+		    			</div>
+		    			<div id="about_us_text">
+			    			<p>Nitro Cow originally started as a mobile food trailer and now has expanded into a store in Takapuna. The team at Nitro Cow craft unique gelato creations using liquid nitrogen. Liquid nitrogen freezes things really fast! This is how we are able to make gelato right in front of your eyes.</p>
+			    			<br>
+							<p>Our process creates a lot of smoke and results in a <i>smoother</i> <b>and</b> <i>creamier</i> texture to the gelato.</p>
+							<br>
+				    		<p>We also make fresh egg waffles which can be topped with your choice of toppings to make the perfect instaworthy photo. And we have our famous Dragon's Breath, a corn puff dipped in liquid nitrogen that turns your breath to smoke!
+				    		<br>
+				    		<br>
+				    		<span id="follow_us">Follow us on Facebook to find out where we will be next!
+			    			</span> 
+							<a href="https://www.facebook.com/nitrocowgelato/" target="_blank" class="fa fa-facebook-square fa-2x"></a></p>
+						</div>
+					</div>
+			    </div>
+			    <div id="our_story_section" class="row">
+					<div class="col-md-6 box_shadow about_image_container">
+						<img class="img-responsive" src="./images/nitroCow_about_us.jpg">
+			    	</div>
+			    	<div class="col-md-7 our_story_container">
+			    		<div class="our_story_header">
+			    			<h1>Our Story</h1>
+			    			<div class="header_underline"></div>
+			    		</div>
+			    		<p>We are two New Zealand foodies, with heritages from Hong Kong and Thailand, who are passionate about food science and ice cream.</p>
+			    		<br>
+			    		<p>We did not create the technique of using liquid nitrogen to make ice cream, but we noticed that here at home, this amazing experience was mainly available to only patrons of fine dining establishments.</p>
+			    		<br>
+			    		<p>With sciences in our repertoire and amazing dairy in our country – we set out to share our love of great ice cream with the rest of the population. Utilising premium New Zealand dairy, and amazing ingredients available to us, we began our journey that is Nitro Cow today. So that’s what Nitro Cow is all about – the Love of good food, the love of science, and the love of entertainment.</p>
+			    	</div>
+			    </div>
+			</div>
+		</section> <!-- close about us -->
+
+		<!-- IMAGE GRID RESPONSIVE -->
+		<section id="gallery">
+			<div class="container">
+				<div class="gallery_header_container">
+					<h1>Gallery</h1>
+					<div class="header_underline"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<div class="my_image">
+							<div class="my_image_inner">
+								<a href="./images/lantern_fest.jpg" data-lightbox="nitroCow">
+									<img class="img-responsive" src="./images/lantern_fest.jpg">
+									<div class="img_overlay">
+										<div class="img_text">Lantern Festival, Auckland</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<div class="my_image">
+							<div class="my_image_inner">
+								<a href="./images/nitroCow_trailer_2.jpg" data-lightbox="nitroCow">
+									<img class="img-responsive" src="./images/nitroCow_trailer_2.jpg">
+									<div class="img_overlay">
+										<div class="img_text">Our Nitro Trailer</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-4">
+						<div class="my_image">
+							<div class="my_image_inner">
+								<a href="./images/waffle_gelato.jpg" data-lightbox="nitroCow">
+									<img class="img-responsive" src="./images/waffle_gelato.jpg">
+									<div class="img_overlay">
+										<div class="img_text">Waffle Gelato!</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="my_image">
+							<div class="my_image_inner">
+								<a href="./images/shop_front.png" data-lightbox="nitroCow">
+									<img class="img-responsive" src="./images/shop_front.png">
+									<div class="img_overlay">
+										<div class="img_text">Checking Out the Menu</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="my_image">
+							<div class="my_image_inner">
+								<a href="./images/gelato_twins.jpg" data-lightbox="nitroCow">
+									<img class="img-responsive" src="./images/gelato_twins.jpg">
+									<div class="img_overlay">
+										<div class="img_text">Enjoying a Waffle Gelato</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-4">
+						<div class="my_image">
+							<div class="my_image_inner">
+								<a href="./images/nitro_gelato_smoke.jpg" data-lightbox="nitroCow">
+									<img class="img-responsive" src="./images/nitro_gelato_smoke.jpg">
+									<div class="img_overlay">
+										<div class="img_text">Liquid N2</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="my_image">
+							<div class="my_image_inner">
+								<a href="./images/waffle_gelato_2.jpg" data-lightbox="nitroCow">
+									<img class="img-responsive" src="./images/waffle_gelato_2.jpg">
+									<div class="img_overlay">
+										<div class="img_text">Another Waffle Gelato!</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="my_image">
+							<div class="my_image_inner">
+								<a href="./images/egg_waffle.png" data-lightbox="nitroCow">
+									<img class="img-responsive" src="./images/egg_waffle.png">
+									<div class="img_overlay">
+										<div class="img_text">Egg Waffle!</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="my_image">
+							<div class="my_image_inner">
+								<a href="./images/gelato_biscuit.jpg" data-lightbox="nitroCow">
+									<img class="img-responsive" src="./images/gelato_biscuit.jpg">
+									<div class="img_overlay">
+										<div class="img_text">Gelato with Biscuit</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-4">
+						<div class="my_image">
+							<div class="my_image_inner">
+								<a href="./images/egg_waffle_girl.jpg" data-lightbox="nitroCow">
+									<img class="img-responsive" src="./images/egg_waffle_girl.jpg">
+									<div class="img_overlay">
+										<div class="img_text">Yum Egg Waffle</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="my_image">
+							<div class="my_image_inner">
+								<a href="./images/people_1.jpg" data-lightbox="nitroCow">
+									<img class="img-responsive" src="./images/people_1.jpg">
+									<div class="img_overlay">
+										<div class="img_text">Dragon's Breath</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="my_image">
+							<div class="my_image_inner">
+								<a href="./images/waffle_gelato_with_sprinkles.jpg" data-lightbox="nitroCow">
+									<img class="img-responsive" src="./images/waffle_gelato_with_sprinkles.jpg">
+									<div class="img_overlay">
+										<div class="img_text">Waffle Gelato with Sprinkles</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div> <!-- close row -->
+				<div class="gallery_insta">
+					<h2>See more pics on our Instagram Page</h2>
+    	   			<a href="https://www.instagram.com/nitrocowgelato/" target="_blank" class="fa fa-instagram fa-3x"></a>
+	    		</div>
+       		</div> <!-- close container -->
+		</section>
+
+		<!-- SECTION BREAK -->
+		<section id="section_break"></section>
+
+		<!-- CONTACT FORM -->
+		<section id="contact">
+			<div class="container scrollReveal">
+				<div class="contact_wrapper box_shadow">
+					<!-- <form method="post" action="send_email.php"> -->
+					<form>
+						<div class="row">
+							<div class="col-md-4 text-center">
+								<h1 id="contact_header">Contact Us</h1>
+							</div>
+						</div>	
+						<div class="row equal inputs_wrapper">
+							<div class="col-md-12 col-xm-12 col-xs-12">
+						    	<div class="col-md-6">
+						    	 
+						      		<!-- Input Fields First Name, Last Name, Email, Subject -->
+							    	<div class="form-group">
+								  		<label class="control-label">First Name</label>  
+								  		<div class="inputGroupContainer">
+								    		<div class="input-group col-md-10 col-xs-12">
+								    			<input name="first_name" class="form-control" type="text" required>
+								     		</div>
+								  		</div>
+								 	</div>
+							      
+							        <div class="form-group">
+							  			<label class="control-label">Last Name</label>  
+							  			<div class="inputGroupContainer">
+							    			<div class="input-group col-md-10 col-xs-12">
+							    				<input name="last_name" class="form-control" type="text" required>
+							     			</div>
+							  			</div>
+							 		</div>
+							      
+							        <div class="form-group">
+							  			<label class="control-label">Email</label>  
+						  				<div class="inputGroupContainer">
+						    				<div class="input-group col-md-10 col-xs-12">
+						    					<input name="email" class="form-control" type="email" required>
+						     				</div>
+						  				</div>
+							 		</div>
+							      
+							        <div class="form-group">
+							  			<label class="control-label">Subject</label>  
+						  				<div class="inputGroupContainer">
+						    				<div class="input-group col-md-10 col-xs-12">
+						    					<input name="subject" class="form-control" type="text" required>
+						     				</div>
+						  				</div>
+							 		</div>
+							    </div> <!--close input fields --> 
+							    
+							    <!-- Message Input Field -->
+							    <div class="col-md-6 col-sm-12 col-xs-12">
+							    	<div class="form-group">
+							  		<label class="control-label">Message</label>  
+							  			<div class="inputGroupContainer">
+							    			<div class="input-group col-xs-12">
+							    				<textarea  name="message" class="form-control" id="contact_message_field" type="textarea" rows="12" maxlength="1000" required></textarea>
+							     			</div>
+							  			</div>
+							 		</div>
+						    	</div> <!--close message input field -->
+							</div> <!-- inputs container -->
+						</div> <!-- close contact form row -->
+						<div class="contact_submit text-center">
+				    		<button class="btn_black_white btn-raise" type="submit" name="submit">Submit!</button>
+				    	</div>
+					</form>
+				</div> <!-- contact wrapper -->
+			</div> <!-- container close -->
+		</section> <!-- close contact form section -->
+
+		<!-- SOCIAL MEDIA FOOTER -->
+		<footer>
+	  		<section class="social_media_footer">
+	  			<div class="row">
+		  			<div class="col-md-5 col-md-offset-1 col-sm-offset-3 col-xs-offset-2 location_phone">
+		  				<p class="location">1/56-60 Hurstmere Road, Takapuna 0622</p>
+		  				<p class="phone">T: 09 917 1810</p>
+		  			</div>
+		  			<div class="col-md-6">
+		  				<h2>Follow us on social media!</h2>
+		    			<div class="social_media_list">
+		       				<a href="https://www.facebook.com/nitrocowgelato/" target="_blank" class="fa fa-facebook-square fa-3x"></a>
+		       				<a href="https://twitter.com/search?q=nitrocowgelato&src=typd&lang=en" target="_blank" class="fa fa-twitter-square fa-3x"></a>
+		       				<a href="https://www.instagram.com/nitrocowgelato/" target="_blank" class="fa fa-instagram fa-3x"></a>
+		    			</div>
+		    		</div>
+		    	</div>
+	    		<p class="copyright">NitroCow. 2017.</p> 
+	  		</section>
+		</footer>
+
+		<!-- load jQuery library before our custom javascript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Bootstrap required JS -->
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <!-- Scroll Reveal -->
+        <script src="js/scrollreveal/scrollreveal.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Lightbox -->
+        <script src="lightbox2-master/dist/js/lightbox.min.js"></script>
+        <!-- my JS file -->
+        <script src="js/main.js"></script> 
+	</body>
+</html>

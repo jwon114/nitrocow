@@ -1,0 +1,1193 @@
+/* NitroCow Website 2017 */
+
+/* Designed by James Wong
+======================
+====== GA FEWD31 =====
+====================== */
+
+html {
+ box-sizing: border-box;
+}
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+ 
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 360px) {
+  .hidden_video_wrapper {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {  
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .img_text {
+    font-size: 30px;
+  }
+
+  .social_media_footer .fa {
+    /*width: 150px;*/
+  }
+}
+
+/* Social Media Footer Sizing*/
+@media only screen and (min-width : 518px) {
+  .social_media_footer .fa {
+    margin: 5px 10px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  /* underline styling */
+  .nav.navbar-nav li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .nav.navbar-nav li a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(0.8);
+  }
+
+  #hidden_video {
+    display: none;
+  }
+
+  #navbar_mobile {
+    display: none;
+  }
+
+  #main {
+    height: 100vh;
+  }
+
+  .navbar-header .navbar-left img {
+    margin-left: 30px;
+  }
+
+  .my_image {
+    margin-bottom: 30px;
+  }
+
+  .gallery_insta {
+    width: 50%;
+    margin-top: 50px;
+  }
+
+  .about_text_container {
+    padding: 0 40px;
+    margin-bottom: 100px;
+  }
+
+  .about_image_container {
+    margin-top: 50px;
+  }
+
+  #main {
+    overflow: hidden;
+  }
+
+  section {
+    padding: 75px 0;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+  /* border transition animation */
+
+  /* top border */
+  .my_image:before {
+    position: absolute;
+    width: 0px;
+    height: 4px;
+    content: '';
+    background: #ffdf80;
+    top: -4px;
+    left: -4px;
+    transition: .25s width ease 0s;
+    -web-kit-transition: .25s width ease 0s;
+  }
+
+  /* right border */
+  .my_image:after {
+    position: absolute;
+    width: 4px;
+    height: 0px;
+    content: '';
+    background: #ffdf80;
+    top: -4px;
+    right: -4px;
+    transition: .25s height ease 0s;
+    -web-kit-transition: .25s height ease 0s;
+  }
+
+  /* left border */
+  .my_image_inner:before {
+    position: absolute;
+    width: 4px;
+    height: 0px;
+    content: '';
+    background: #ffdf80;
+    bottom: -4px;
+    left: -4px;
+    transition: .25s height ease 0s;
+    -web-kit-transition: .25s height ease 0s;
+  }
+
+  /* bottom border */
+  .my_image_inner:after {
+    position: absolute;
+    width: 0px;
+    height: 4px;
+    content: '';
+    background: #ffdf80;
+    bottom: -4px;
+    right: -4px;
+    transition: .25s width ease 0s;
+    -web-kit-transition: .25s width ease 0s;
+  }
+
+  .my_image:hover:before {
+    width: 101.75%;
+    transition: .5s width ease 0s;
+    -web-kit-transition: .5s width ease 0s;
+  }
+
+  .my_image:hover:after {
+    height: 101.75%;
+    transition: .5s height ease 0s;
+    -web-kit-transition: .5s height ease 0s;
+  }
+
+  .my_image:hover .my_image_inner:before {
+    height: 101.75%;
+    transition: .5s height ease 0s;
+    -web-kit-transition: .5s height ease 0s;
+  }
+
+  .my_image:hover .my_image_inner:after {
+    width: 101.75%;
+    transition: .5s width ease 0s;
+    -web-kit-transition: .5s width ease 0s;
+  }
+
+  .my_image:hover .img_overlay {
+    opacity: 1;
+  }
+
+  .img_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0,0,0,0.7);
+  }
+
+  .img_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    font-size: 30px;
+    color: white;
+  }
+
+  .our_story_container {
+    width: 50%;
+    padding-left: 50px;
+  }
+
+  .location_phone {
+    margin-bottom: 0px;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1100px) {
+  /* Remove Social Media List in header */
+  .navbar .navbar-header .social_media_list {
+    display: none;
+  }
+
+  .triangles {
+    display: none;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .my_image {
+    margin-bottom: 30px;
+  }
+
+  .our_story_container {
+    margin-left: 0;
+  }
+
+  .location_phone {
+    margin-bottom: 30px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+  .center_btn_wrapper {
+    display: none;
+  }
+
+  /* Pull main section to top in mobile */
+  #main {
+    overflow: visible;
+  }
+
+  /* Disable parallax for mobile */
+  .main_image.parallax {
+    background-attachment: initial;
+  }
+
+  #main {
+    height: 70vh;
+  }
+
+  #navbar_main {
+    display: none;
+  }
+
+  .about_image_container {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .navbar-header .navbar-left img {
+    margin-left: 0;
+  }
+
+  .my_image {
+    margin-bottom: 10px;
+  }
+
+  .gallery_insta {
+    width: 100%;
+    margin-top: 0;  
+  }
+
+  .gallery_insta h2 {
+    margin-top: 0;  
+  }
+
+  .about_text_container {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  /* Nav Overlay Mobile */
+  .nav_button {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 999;
+    font-size: 40px;
+    display: none;
+  }
+
+  .nav_button a {
+    text-decoration: none;
+  }
+
+  .nav_button_open:after {
+    color: black;
+    content: "\f0c9";
+    font-family: "FontAwesome";
+    transition-property: all .2s linear 0s;
+    -moz-transition: all .2s linear 0s;
+    -webkit-transition: all .2s linear 0s;
+    -o-transition: all .2s linear 0s;
+  }
+
+  .nav_button_close:after {
+    color: black;
+    content: "\f00d";
+    font-family: "FontAwesome";
+    transition-property: all .2s linear 0s;
+    -moz-transition: all .2s linear 0s;
+    -webkit-transition: all .2s linear 0s;
+    -o-transition: all .2s linear 0s;
+  }
+
+  #contact_message_field {
+    height: 100px;
+  }
+
+  .nav_overlay ul .current a {
+    color: #ffdf80;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+}
+
+/* Social Media Footer Sizing*/
+@media only screen and (max-width : 518px) {
+  .social_media_footer .fa {
+    margin: 0;
+  }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .img_text {
+    font-size: 20px;
+  }
+
+  .fa-4x {
+    font-size: 3.5em;
+  }
+
+  .social_media_footer .fa {
+    width: 100px;
+  }
+
+  .nav_button {
+    right: 15px;
+  }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 360px) {
+  .hidden_video_wrapper {
+    height: 250px;
+    width: 100%;
+  }
+}
+
+/*==============================================*/
+/*========= My Custom Code Starts Here =========*/
+/*==============================================*/
+
+body {
+	/*margin-top: 100px;*/
+}
+
+.container#about_container {
+  width: 90vw;
+}
+
+section {
+  position: relative;
+}
+
+/*===================*/
+/* Preloading Screen */
+/*===================*/
+
+/* https://ihatetomatoes.net/create-custom-preloading-screen/ */
+
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #FFF;
+
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+
+    z-index: 1001;
+}
+
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #FFF;
+
+    -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #FFF;
+
+  -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+          animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+@-webkit-keyframes spin {
+    0%   { 
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+@keyframes spin {
+    0%   { 
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+#loader-wrapper .loader-section {
+  position: fixed;
+  top: 0;
+  width: 51%;
+  height: 100%;
+  background: #222222;
+  z-index: 1000;
+  -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+  -ms-transform: translateX(0);  /* IE 9 */
+  transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+}
+
+#loader-wrapper .loader-section.section-left {
+  left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+  right: 0;
+}
+
+/* Loaded */
+.loaded #loader-wrapper .loader-section.section-left {
+  -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: translateX(-100%);  /* IE 9 */
+          transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+  -webkit-transition: all 0.9s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+          transition: all 0.9s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+  -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: translateX(100%);  /* IE 9 */
+          transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+
+  -webkit-transition: all 0.9s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+          transition: all 0.9s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;  
+          transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper {
+  visibility: hidden;
+
+  -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: translateY(-100%);  /* IE 9 */
+          transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+  -webkit-transition: all 0.3s 1.2s ease-out;  
+          transition: all 0.3s 1.2s ease-out;
+}
+
+/*=====*/
+/* Nav */
+/*=====*/
+
+.navbar_main_styles {
+  position: relative;
+  top: 0;
+	margin-bottom: 0;
+	background: rgba(0,0,0,0);
+  z-index: 999;
+  height: 100px;
+  transition: background .12s ease-in-out .1s;
+  -moz-transition: background .12s ease-in-out .1s;
+  -webkit-transition: background .12s ease-in-out .1s;
+}
+
+.navbar_logo {
+  visibility: hidden;
+  pointer-events: none;
+  cursor: default;
+  transition: visibility .1s ease-in-out;
+  -moz-transition: visibility .1s ease-in-out;
+  -webkit-transition: visibility .1s ease-in-out;
+}
+
+.fade_in {
+  background: rgba(0,0,0,1);
+  border-bottom: 2px solid white;
+  transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+}
+
+.fade_in_logo {
+  visibility: visible;
+  pointer-events: auto;
+  cursor: auto;
+  transition: visibility .1s ease-in-out .11s;
+  -moz-transition: visibility .1s ease-in-out .11s;
+  -webkit-transition: visibility .1s ease-in-out .11s;
+}
+
+.navbar-header .navbar-left img {
+	height: 97px;
+	width: auto;
+}
+
+.navbar-header .main_logo img{
+  height: 97px;
+  width: auto;
+}
+
+/* navbar buttons */
+.nav.navbar-nav li a {
+	position: relative;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	margin: 20px 20px 0;
+  font-family: 'Bree Serif', serif;
+}
+
+.navbar-right {
+  position: absolute;
+  right: 200px;
+}
+
+/* set the hover colour to white, once clicked (in focus) keep button white */
+.nav.navbar-nav li a:hover, .nav.navbar-nav li a:focus {
+	color: white;
+  background: none;
+}
+
+.navbar .social_media_list {
+  display: inline-block;
+  position: relative;
+  left: 100px;
+  top: 30px;
+}
+
+.navbar .social_media_list .fa-facebook-square,
+.navbar .social_media_list .fa-twitter-square {
+  padding: 0;
+  width: 30px;
+  margin: 0 20px;
+}
+
+.navbar .social_media_list .fa-instagram {
+  padding: 0;
+  background: none;
+  width: 30px;
+  margin: 0 20px;
+}
+
+.nav.navbar-nav .current a:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(0.8);
+}
+
+.nav.navbar-nav a:before {
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+/* Nav Mobile Overlay */
+.nav_overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #333;
+  overflow: auto;
+  z-index: 99;
+  opacity: 0.9;
+}
+
+.nav_overlay ul {
+  text-align: center;
+  margin-top: 100px;
+  padding: 0;
+}
+
+.nav_overlay li {
+  /*line-height: 5;  */
+  height: 150px;
+}
+
+.nav_overlay li a {
+  font-size: 30px;
+  color: white;
+  font-family: 'Bree', sans-serif;
+  text-decoration: none;
+}
+
+/*=======*/
+/* Main */
+/*=======*/
+
+#main {
+	padding: 0;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+
+.main_text {
+  position: relative;
+  top: 0px;
+}
+
+.main_header_wrapper {
+  height: 83px;
+  overflow: auto;
+}
+
+.main_image .container {
+  position: relative;
+  height: 100%;
+  top: 0;
+  left: 0;
+} 
+
+.center_btn_wrapper {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  width: 300px;
+  margin-left: -150px;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main_image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/three_gelato.jpg');
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.btn_black_white {
+  background-color: black;
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 25px;
+  padding: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.btn-raise::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.btn-raise:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.2, 1.2);
+}
+
+.btn-raise:hover::after {
+  opacity: 1;
+}
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay */    
+  height: 0;
+  width: 100%;
+  position: absolute; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 1s;
+}
+
+/* Position the close button (top right corner) */
+.overlay #closebtn {
+  position: absolute;
+  top: 10px;
+  right: 35px;
+  font-size: 60px;
+  text-decoration: none;
+  color: white;
+  z-index: 1;
+}
+
+.video_wrapper {
+  position: relative;
+  /*padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 48%;
+  padding-top: 25px;
+  height: 100%;
+}
+
+.video_wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.triangles {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20vh;
+  pointer-events: none;
+}
+
+.triangle_left {
+  background-color: rgb(248,248,248);
+  width: 150%;
+  height: 50vh;
+  display: block;
+  position: absolute;
+  transform: rotate(4deg) translateY(148px);
+  z-index: 3;
+  left: -10%;
+}
+
+.triangle_right {
+  background-color: black;
+  width: 150%;
+  height: 50vh;
+  right: 0;
+  display: block;
+  position: absolute;
+  transform: rotate(-4deg) translateY(157px);
+  left: 9%;
+  z-index: 2;
+}
+
+/*==============*/
+/* Hidden Video */
+/*==============*/
+
+#hidden_video {
+  background-color: white;
+  padding: 30px 30px;
+}
+
+.hidden_video_header_wrapper {
+  margin-bottom: 35px;
+}
+
+#hidden_video h1 {
+  font-family: 'Bree Serif', serif;
+  color: black;
+}
+
+/*==========*/
+/* About Us */
+/*==========*/
+
+#about {
+  background-color: rgb(248,248,248);
+}
+
+.equal {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+
+.about_image_container {
+  padding: 0;
+}
+
+#about img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about_text_container {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+}
+
+.about_us_header,
+.our_story_header {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.about_us_header h1,
+.our_story_header h1 {
+  font-family: 'Bree Serif', serif;
+  margin-top: 0;
+}
+
+#about p {
+  font-family: 'Bree Serif', serif;
+  text-align: justify;
+  margin: 0;
+}
+
+#about a {
+	text-decoration: none;
+  margin-left: 20px;
+}
+
+#about a:focus {
+	color: black;
+}
+
+#follow_us {
+  font-size: 1em;
+  text-decoration: underline;
+}
+
+.box_shadow {
+  box-shadow: 10px 10px 5px #888888;
+}
+
+/*============*/
+/* Image Grid */
+/*============*/
+
+#gallery {
+  background-color: white;
+  overflow: hidden;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+#gallery:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 200vw;
+  height: 40vw;
+  background-color: #333333;
+  opacity: 0.3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-29deg);
+}
+
+.gallery_header_container {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 5px 0;
+  position: relative;
+}
+
+.gallery_header_container h1 {
+  color: black;
+  font-family: 'Bree Serif', sans-serif;
+}
+
+.header_underline {
+  border-top: 3px solid black;
+  width: 70px;
+  margin: 20px auto 0;
+  border-color: silver;
+}
+
+.my_image {
+  position: relative;
+  border: black 4px solid;
+  position: relative;
+  opacity: 1;
+  transition: .5s ease;
+}
+
+.img_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.img_text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  font-size: 30px;
+  color: white;
+}
+
+.gallery_insta {
+  text-align: center;
+  padding: 10px 0 10px 0;
+  margin: 0 auto;
+}
+
+.gallery_insta h2 {
+  color: black;
+  font-family: 'Bree Serif', sans-serif;
+}
+
+.gallery_insta a {
+  text-decoration: none;
+}
+
+.gallery_insta .fa-instagram {
+  color: black;
+}
+
+/*===============*/
+/* Section Break */
+/*===============*/
+
+/* Double Line */
+#section_break {
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  margin: 40px auto;
+  height: 30px;
+  padding: 0;
+  width: 150px;
+}
+
+/*==============*/
+/* Contact Form */
+/*==============*/
+
+#contact {
+  background-color: white;
+  padding-bottom: 75px;
+  padding-top: 0;
+}
+
+#contact h1 {
+	margin-bottom: 40px;
+  font-family: 'Bree Serif', serif;
+}
+
+#contact .control-label {
+  font-family: 'Bree Serif', serif;
+}
+
+#contact_message_field {
+  resize: none;
+}
+
+.contact_wrapper {
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid black;
+  background: #fdfdfd;
+}
+
+.inputs_wrapper {
+  margin: 0 auto;
+}
+
+.contact_submit {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.contact_submit button {
+  font-size: 20px;
+  padding: 10px 30px;
+  font-family: 'Bree Serif', serif;
+}
+
+.contact_submit button:hover {
+  background: black;
+  color: white;
+}
+
+/*==========*/
+/*  Footer  */
+/*==========*/
+
+.location_phone {
+  margin-top: 30px;
+}
+
+.location_phone .location,
+.location_phone .phone {
+  text-align: left;
+}
+
+.social_media_footer {
+  background-color: black;
+  padding: 10px 0;
+}
+
+.social_media_footer .row {
+  width: 100vw;
+  margin-left: 0;
+}
+
+.social_media_footer h2, .social_media_footer p {
+	text-align: center;
+	color: white;
+  font-family: 'Bree Serif', serif;
+}
+
+.social_media_list {
+  text-align: center;  
+}
+
+.social_media_list a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 50px;
+}
+
+/*==============================================*/
+/*======= Font Awesome Stylesheet START ========*/
+/*==============================================*/
+
+.social_media_footer .fa {
+	padding: 20px;
+	text-align: center;  
+}
+
+.fa:hover {
+  opacity: 0.3;
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-twitter {
+	color: white;
+}
+
+.fa-facebook-square {
+	color: black;
+}
+
+/*===============================================*/
+/*========= Font Awesome Stylesheet END =========*/
+/*===============================================*/
