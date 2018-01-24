@@ -8,6 +8,7 @@ $(document).ready(function() {
 	// $(window).on('beforeunload', function() {
 	//     $(window).scrollTop(0);
 	// });
+	console.log('loaded');
 
 	/*=============*/
 	/* Page Scroll */
@@ -158,6 +159,12 @@ $(document).ready(function() {
 /* YouTube API Player */
 /*====================*/
 
+// var tag = document.createElement('script');
+
+// tag.src = "https://www.youtube.com/iframe_api";
+// var firstScriptTag = document.getElementsByTagName('script')[0];
+// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
 var player;
 function onYouTubeIframeAPIReady() {
 	player = new YT.Player('video_player', {
@@ -172,6 +179,7 @@ function onYouTubeIframeAPIReady() {
     		'onStateChange': onPlayerStateChange
     	}
     });
+    console.log('Youtube Player Ready');
 }
 
 // The API will call this function when the video player is ready.
@@ -193,7 +201,7 @@ function onPlayerReady() {
 
 	// Open Video Overlay
 	$('#check_us_out_btn').on('click', function() {
-		
+		console.log('Check Us Out button clicked');
 	    $('html, body').animate({
 	    	scrollTop: 0});
 		
